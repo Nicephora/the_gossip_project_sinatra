@@ -1,16 +1,18 @@
 <html>
-  <head>
-    <title>The Gossip Project</title>
-  </head>
-  <body>
-    <a href="/gossips/new/">Clique ici et crée ton Potin</a>
-    <h1>Mon super site de gossip, depuis le dossier views !</h1>
-  </body>
+<head>
+  <title>The Gossip Project</title>
+</head>
+<body>
+  <a href="/gossips/new/">Clique ici et crée ton Potin 🗣️  🗣️️</a>
+  <h1>Mon super site de gossip, depuis le dossier views !</h1>
+  <h2>Voici tous les gossips</h2>
+  🗣️  🗣️  🗣️  🗣️  🗣️  🗣️  🗣️  🗣️  🗣️  🗣️ 
+</body>
 </html>
 
 <% gossips.each do |gossip| %>
-        <p>
-          <%= gossip.author %><br/>
-          <%= gossip.content %>
-        </p>
-      <% end %>
+<p>
+  <%= gossip.author %><br/>          <!--On affiche l'ensemble des gossip sur la page en faisant un each des gossips et en sortant l'auteur et le content"-->
+  <%= gossip.content %>
+</p>
+<% end %>
